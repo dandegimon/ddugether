@@ -1,43 +1,26 @@
-﻿
-@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+﻿@font-face { font-family: 'Binggrae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 html, body, table, div, p {
-font-family: 'KOMACON';
-letter-spacing: 0.5px;
+font-family: 'Binggrae'; }
+
+html, body{
+ background-color: #f3eed7;
 }
 
-
-
-html,body {
-background-color: #ffe6ee; /*배경색*/
+body{
+    background: rgba(255,255,255,0) url(https://dandegimon.github.io/ddugether/images/backimg.png);
+    height: auto;
 }
-
-body {
-letter-spacing: -0.05em !important;
-  background: transparent;
-  height: auto;
-  font-family: 'Nanum Gothic', sans-serif;
-background-image: url('https://dandegimon.github.io/silgerher/images/sakura1.png'), url('https://dandegimon.github.io/silgerher/images/sakura2.png'), url('https://dandegimon.github.io/silgerher/images/sakura3.png');
-    -webkit-animation: snow 8s linear infinite;
-    -moz-animation: snow 8s linear infinite;
-    -ms-animation: snow 8s linear infinite;
-    animation: snow 10s linear infinite;}
 
 header .row>div:nth-child(1)>a {
   display: block;
   height: 65px;
-  background: url(https://dandegimon.github.io/silgerher/images/sp_logo.png) no-repeat;
+  margin-bottom: -20px;
+  background: url(https://dandegimon.github.io/ddugether/images/logo.gif) no-repeat;
+  margin-bottom: 1px;
+  margin-top: 3px;
 }
 
-header .row>div:nth-child(1)>a img {
-display: none; /*기본 로고 숨김*/
-}
-
-/* 로고 밑 빈공간 */
-.col-xs-4{
-margin-bottom: -14px;
-margin-top: 10px;
-}
 
 /* 전체 쉐도우 */
 
@@ -50,7 +33,7 @@ header #header-bar>.row,
 /* 로고밑 NAV bar */
 
 header #header-bar>.row {
-    border: double 3px #7caf7e !important;
+    border: 3px solid #190907 !important;
     border-radius: 20px;
 }
 
@@ -67,15 +50,15 @@ header .row>div:nth-child(1)>a>img {
 /* 검색폼 보더 */
 
 header #right-search-form>input[type='text'] {
-  border: 2px solid #a06650;
-  border-radius: 13px;
+  border: 2px solid #190907;
+  border-radius: 20px;
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
 
 #main .menu-wrapper>.header {
-    background: #f5aeb2;
-    border: 3px solid #f5aeb2 !important;
+    background: #190907;
+    border: 3px solid #190907 !important;
     border-radius: 10px 10px 0 0;
 }
 
@@ -86,11 +69,11 @@ border-radius: 0px 0px 15px 15px;
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-  color: #fef7f1;
+  color: white;
 }
 
 .fa-square:before {
-  color: #f5aeb2;
+  color: #f6f0da;
 }
 
 header #header-bar>.row,
@@ -100,7 +83,7 @@ header #header-bar>.row,
 }
 
 #main #main-content>div.frame{
-    border: double 3px #f5aeb2 !important;
+    border: 3px solid #190907 !important;
     border-radius: 10px;
 }
 
@@ -111,41 +94,39 @@ border-radius: 10px;
 /* 헤더 검색 버튼 */
 
 header #right-search-form>#right-search-btn {
-  color: #a06650;
+  color: #190907;
 }
 
 /* 헤더 [광고]배경색 */
 
 header #header-bar #header-top-notice strong.notice-badge {
-  background: #a06650;
+  background: #190907;
 }
 
 /* fa색상 */
 
 header #header-bar .fa {
-  color: #7caf7e;
-  margin-top: 5px;
+  color: #190907;
 }
 
 /* 스트리머 게시판 상단 정보 글씨색상 */
 
 #board-info #board-info-bottom a {
-  color: #f5aeb2;
+  color: #190907;
 }
 
 /* 좌측메뉴 숏컷링크 글씨 색상 */
 
 #main .menu-wrapper>a>em {
-  color: #a06650;
+  color: #190907;
 }
 
-/* 좌측메뉴 메뉴사이의 공간 색상(없음) */
+/* 좌측메뉴 메뉴사이의 공간 색상 */
 
 #main .menu-wrapper .spacer {
-  background: none;
-  height: 0em;
+  background: #190907;
+  height: 0.15em;
 }
-
 
 /* 게시글 관련부분 */
 
@@ -154,11 +135,12 @@ header #header-bar .fa {
 }
 
 #article-list #article-list-category {
-     border: dashed 2px #f5aeb2;
+     border: 2px solid #190907;
     background: white;
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 /*카테고리 안 색상*/
 #article-list #article-list-category>a {
   background: white;
@@ -166,23 +148,23 @@ header #header-bar .fa {
 
 /*게시글 테두리*/
 #article-list>.article-list-row {
-    border: 1px solid #fef7f1;
+    border: 1px solid #f6f0da;
     border-radius: 15px;
     margin: 4px 0;
 }
 
 /* 인기글 배경색상 */
 #article-list>.article-list-row.hot{
-background-color: #eff6ff;
+background-color: #fff991;
 }
 
 /*추천수*/
 #article-list>.article-list-row>.item>.list-header>span {
-    background-color: #f00c49;
+    background-color: #190907;
     color: #fff;
     font-weight: bold;
-    padding: 2px 6px;
-    font-size: 10px;
+    padding: 1px 5px;
+    font-size: 11px;
     border-radius: 50%;
 }
 
@@ -193,16 +175,17 @@ background-color: #eff6ff;
 
 /*댓글수*/
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
-  color: #a06650;
+  color: #b9a139;
+}
+
+/* 글 안속 댓글 닉네임 색 */
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
+color: #b9a139;
 }
 
 /*글쓴이색*/
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: #a06650;
-}
-
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-color: #a06650;
+  color: #b9a139;
 }
 
 /*선택된 페이지 색상*/
@@ -212,8 +195,8 @@ color: #a06650;
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-  background-color: #d0dded;
-  border-color: #d0dded;
+  background-color: #b9a139;
+  border-color: #b9a139;
   border-radius: 3px;
 }
 
@@ -222,13 +205,13 @@ color: #a06650;
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-  color: #d0dded;
+  color: #b9a139;
 }
 
 /*선택되지 않은 페이지 색상*/
 .pagination>li>a,
 .pagination>li>span {
-  color: #f5aeb2;
+  color: #b9a139;
 }
 
 /*카테고리 옆 빈공간 색*/
@@ -241,11 +224,11 @@ color: #a06650;
 }
 
 #article-info>h2>span.category {
-  color: #d0dded !important;
+  color: #e71c23 !important;
 }
 
 #article-reply-area>.header h5 {
-  color: #f5aeb2;
+  color: #e71c23;
 }
 
 #main .menu-wrapper>a {
@@ -254,26 +237,29 @@ color: #a06650;
 
 /* 집모양 */
 a {
-  color: #a06650;
+  color: #190907;
 }
 
+/* 공지사항 동그라미 */
+span.a-badge i.fa.fa-info-circle {
+  color: #e71c23;
+}
 
-
-/* 공지사항*/
+/* 공지사항 아이콘*/
 #article-list>.article-list-row.notice .fa-info-circle:before {
-    content: url(https://dandegimon.github.io/silgerher/images/notice.gif);
+    content: url('https://dandegimon.github.io/silgerher/images/notice.gif');
 }
 
 /* 인기글 표시*/
 span.a-badge i.fa.fa-star {
-    opacity: 100; color:rgba(95,02,22,0);
-    vertical-align: 2px !important;
-    width: 15px;
-    height: 15px;
-    background: url(https://dandegimon.github.io/silgerher/images/best.png);
-    background-size: 15px 15px;
+    color: rgba(0, 0, 0, 0);
+    width: 16px;
+    height: 16px;
+    animation: doongdoong1 0.5s linear infinite alternate;
+    background: url('https://dandegimon.github.io/ddugether/images/best.gif');
     background-repeat: no-repeat;
-    animation: infinite rot360 1.2s;
+    position: relative;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* footer */
@@ -295,24 +281,16 @@ span.a-badge i.fa.fa-star {
 
 /*글쓰기 색상*/
 .btn-primary {
-  background: #a06650 !important;
- border-color: #a06650;
+  background: #190907 !important;
+ border-color: #190907;
 }
-/* 글 안에 댓글 폼 */
 .fr-toolbar{
-border-color: #a06650; 
-color: ##a06650;
-background: #fef7f1;
+border-color:#190907; 
 }
 
 /*글쓰기 라디오스*/
 #article-list #article-list-menu>.btn.write{
 border-radius: 10px;
-}
-
-/*윗글아랫글 색상*/
-#article-neighbor-list{
-color: #a06650;
 }
 
 /*하단 인기글설정삭제 라이오스*/
@@ -326,13 +304,8 @@ border-radius: 10px;
 border-radius: 10px;
 }
 
-/* 공지사항 숨기기 버튼 */
 #article-list #article-option-area{
-top: 2px;
-right: 16px; 
-}
-#article-list #article-option-area>#article-option-area-toggle-btn{
-border-radius: 10px;
+display:none;
 }
 
 /*광고양옆 짝대기*/
@@ -342,24 +315,23 @@ header #header-bar #header-top-notice strong.notice-badge{display:none;}
 
 /* 사람수 옆 이미지 색상 */
 #board-info #viewers-area {
-color: #a06650;
+color: #190907;
 font-weight: 700;
 }
 
 /* 사람 명수 앞에 그림*/
 #board-info #viewers-area .fa-user:before{
      color: rgba(10,59,84,0);
-    content: url(https://dandegimon.github.io/silgerher/images/hentai.gif);
-    font-size: 16px;
+    content: url('https://dandegimon.github.io/ddugether/images/icon.png');
 }
 
 #board-info #viewers-area #viewers:before {
-content: "벚꽃은 집에서 보는 "; /*오른쪽 상단 사이트 이용자 수 뒷부분*/
+content: "재현씨... "; /*오른쪽 상단 사이트 이용자 수 뒷부분*/
 cursor: text;
 }
 
 #board-info #viewers-area #viewers:after {
-    content: " 명의 헨타이";
+    content: " 명이 기다리네...?";
     cursor: text;
 }
 
@@ -367,19 +339,20 @@ cursor: text;
 
 /*공지사항 배경색*/
 #article-list>.article-list-row.notice{
-    background-color: #fef7f1;
+    background-color: #76a775;
     border-radius: 15px;
     border: 2px solid;
     margin-bottom: 5px;
     border-color:rgba(0,0,0,0);
 }
+
 #article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time{
 border-bottom:none;
 }
 
-/*실프좋아요표시*/
+/*따띠좋아요표시*/
 .fa-heart:before {
-     content: url(https://dandegimon.github.io/silgerher/images/silph27.gif);
+     content: url('https://dandegimon.github.io/ddugether/images/jaehyun.gif');
     position: relative;
     top: -2px;
     display: inline-block;
@@ -390,20 +363,18 @@ header #header-bar #header-menu-left #playgroundDropdown {
     padding-right: 0.7em;
 }
 
-/*실프프사동그라미*/
+/*뚜띠프사동그라미*/
 #board-info #board-info-profile-img{
     width: 6.5em;
     height: auto;
+    background-color: white;
     float: left !important;
     border-radius: 50%;
     border: none;
     position: relative;
     top: -12px;
     left: -10px;
-}
-#board-info #board-info-profile-img:hover{
-   -webkit-animation: slide-right 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   animation: slide-right 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: doongdoong 1s infinite linear;
 }
 
 #board-info{
@@ -418,34 +389,32 @@ header #header-bar #header-menu-left #favoriteDropdown {
 
 #board-info h1>a{
     text-decoration: none;
-    color: #a06650;
+    color: #190907;
     font-size: 30px;
     font-weight: bold;
 }
+
 .label-default{
-background:#f00c49;
+background:#f6f0da;
 }
 #article-reply-area #reply-real-area .reply, #article-reply-area #reply-best-area .reply{
-border:none
+border:none;
 }
 #article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header {
-    background: #fef7f1;
-    border: 2px solid #a06650;
+    background: #f7f7f7;
+    border: 2px solid #190907;
     padding: 0.4em 0.5em;
     border-radius: 10px;
 }
 
-footer{
- color: #a06650;
-}
-
 /*마우스 포인터*/
 *{
-cursor: url(https://dandegimon.github.io/silgerher/images/fox.png) 0 0, auto !important;
+cursor: url(https://dandegimon.github.io/ddugether/images/mouse.png) 0 0, auto !important;
 }
 #aw0{
-cursor: url(https://dandegimon.github.io/silgerher/images/fox.png) 0 0, auto !important;
+cursor: url(https://dandegimon.github.io/ddugether/images/mouse.png) 0 0, auto !important;
 }
+
 
 /* 위로 */
 #movetotop img {
@@ -454,52 +423,10 @@ cursor: url(https://dandegimon.github.io/silgerher/images/fox.png) 0 0, auto !im
 #movetotop {
     display: inline-block;
     opacity:1;
-    background: url("https://dandegimon.github.io/silgerher/images/up.png");
+    background: url("https://dandegimon.github.io/ddugether/images/up.png");
     width: 80px;  
     height: 80px;
     background-size: contain;
-}
-
-/* 추천버튼 */
-.vote-btn[data-type="up"] {
-  border: none;
-  font-size: 0;
-}
-.vote-btn[data-type="up"]:hover {
-  background: none !important;
-}
-.vote-btn[data-type="up"]::before {
-  display: inline-block;
-  background: white;
-  border: dashed #f5aeb2;
-  color: #f5aeb2;
-  float: left;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 20pt;
-  content: "\f164";
-  padding-top: 11px;
-  padding-left: 1px;
-  font: normal 22px/1 FontAwesome;
-  -moz-transition:color .2s ease;
-  -o-transition:color .2s ease;
-  -ms-transition:color .2s ease;
-  -webkit-transition:color .2s ease;
-  transition:color .2s ease;
-}
-.vote-btn[data-type="up"]:hover::before {
-  background: #fef7f1;
-  color: #f5aeb2;
-  -webkit-animation: rotate-hor-center 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
-  animation: rotate-hor-center 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
-}
-.vote-btn[data-type="up"] span {
-  float: left;
-  padding-top: 12px;
-  padding-left: 13px;
-  font-size: 22px;
-  color: #f5aeb2;
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -510,7 +437,7 @@ header:before {
     display: block;
     width: 100%;
     height: 78px;
-    background: url('https://dandegimon.github.io/silgerher/images/top.jpg') no-repeat #fff;
+    background: url('https://dandegimon.github.io/ddugether/images/top.jpg') no-repeat #fff;
     background-position: center center;
     position: relative;
     top: 0;
@@ -524,61 +451,32 @@ header {
 }
 
 /*애니메이션*/
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(90px);
-            transform: translateX(90px);
-  }
-}
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(90px);
-            transform: translateX(90px);
-  }
+
+@keyframes doongdoong{
+    0% {
+        top: -8px;
+    }
+
+    50% {
+        top: -2px;
+    }
+
+    100% {
+        top:-8px;
+    }
 }
 
-@keyframes rot360 {
- from { transform: rotate(360deg);} to { transform: rotate(0deg);}
+@keyframes doongdoong1{
+    0% {
+        top: -3px;
+    }
+
+    50% {
+        top: -0px;
+    }
+
+    100% {
+        top:-3px;
+    }
 }
 
-@keyframes rotate-hor-center {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-}
-
-
-/* 눈 내리는 효과 설정 CSS 파일 맨 아래에 추가*/
-@keyframes snow {
-0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
-}
-  
-@-moz-keyframes snow {
-0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
-}
-  
-@-webkit-keyframes snow {
-0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 50% {}
- 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
-}
-  
-@-ms-keyframes snow {
-0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
-}

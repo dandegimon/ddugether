@@ -374,8 +374,6 @@ header #header-bar #header-menu-left #playgroundDropdown {
     position: relative;
     top: -12px;
     left: -10px;
-	-webkit-animation: slide-left 1s both;
-	animation: slide-left 1s both;
 }
 #board-info #board-info-profile-img:hover{
 	-webkit-animation: slide-left 1s both;

@@ -377,6 +377,10 @@ header #header-bar #header-menu-left #playgroundDropdown {
 	-webkit-animation: slide-left 1s both;
 	animation: slide-left 1s both;
 }
+#board-info #board-info-profile-img:hover{
+	-webkit-animation: slide-left 1s both;
+	animation: slide-left 1s both;
+}
 
 #board-info{
 height: 100px;

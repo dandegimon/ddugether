@@ -86,6 +86,12 @@ header #header-bar>.row,
     border: 3px solid #190907 !important;
     border-radius: 10px;
 }
+/* 뚜박사 */
+#article-list{
+	background-image: url(https://dandegimon.github.io/ddugether/images/ddubaksa.png);
+	background-repeat: no-repeat;
+	background-position: 74% 88.5%;
+}
 
 #main .menu-wrapper {
 border-radius: 10px;
@@ -155,7 +161,7 @@ header #header-bar .fa {
 
 /* 인기글 배경색상 */
 #article-list>.article-list-row.hot{
-background-color: #fff991;
+background-color: rgba(255,249,145,0.7);
 }
 
 /*추천수*/
@@ -339,7 +345,7 @@ cursor: text;
 
 /*공지사항 배경색*/
 #article-list>.article-list-row.notice{
-    background-color: #76a775;
+    background-color: rgba(118,167,117,0.7);
     border-radius: 15px;
     border: 2px solid;
     margin-bottom: 5px;

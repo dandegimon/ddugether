@@ -373,12 +373,12 @@ font-weight: 700;
 }
 
 #board-info #viewers-area #viewers:before {
-content: "재현씨의 생일을 축하하는 "; /*오른쪽 상단 사이트 이용자 수 뒷부분*/
+content: "재현씨... "; /*오른쪽 상단 사이트 이용자 수 뒷부분*/
 cursor: text;
 }
 
 #board-info #viewers-area #viewers:after {
-    content: "명";
+    content: "명이 기다리네...?";
     cursor: text;
 }
 

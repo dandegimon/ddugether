@@ -9,6 +9,15 @@ html, body{
  background-color: #f8f5e7;
 }
 
+body {
+letter-spacing: -0.05em !important;
+  background: transparent;
+  height: auto;
+background-image: url('https://dandegimon.github.io/ddugether/images/bul1.png'), url('https://dandegimon.github.io/ddugether/images/bul2.png'), url('https://dandegimon.github.io/ddugether/images/bul3.png');
+    -webkit-animation: animationFrames 20s linear infinite;
+    -moz-animation: animationFrames 20s linear infinite;
+    -ms-animation: animationFrames 20s linear infinite;
+    animation: animationFrames 40s linear infinite;}
 
 header .row>div:nth-child(1)>a {
   display: block;
@@ -513,3 +522,25 @@ header {
             transform: translateX(-100px);
   }
 }
+/* 배경 */
+@keyframes animationFrames{
+0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
+ 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+  
+@-moz-keyframes animationFrames {
+0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
+ 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+  
+@-webkit-keyframes animationFrames {
+0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
+50% {}
+ 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+  
+@-ms-keyframes animationFrames {
+0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
+ 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+}
+

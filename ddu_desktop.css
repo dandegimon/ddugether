@@ -1,40 +1,29 @@
 ﻿
-
 @font-face { font-family: 'Binggrae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 html, body, table, div, p {
 font-family: 'Binggrae'; }
 
 html, body{
- background-color: #f8f5e7;
+ background-image: linear-gradient(#000000,#000428, #002e57);
+ height: auto;
+}
+body{
+  letter-spacing: -0.05em !important;
+  background: transparent;
+  background-image: url('https://dandegimon.github.io/ddugether/images/star1.png'), url('https://dandegimon.github.io/ddugether/images/star2.png'), url('https://dandegimon.github.io/ddugether/images/star3.png');
+  animation: star 40s linear infinite;
 }
 
-body {
-letter-spacing: -0.05em !important;
-  background: transparent;
-  height: auto;
-background-image: url('https://dandegimon.github.io/ddugether/images/bul1.png'), url('https://dandegimon.github.io/ddugether/images/bul2.png'), url('https://dandegimon.github.io/ddugether/images/bul3.png');
-    -webkit-animation: animationFrames 20s linear infinite;
-    -moz-animation: animationFrames 20s linear infinite;
-    -ms-animation: animationFrames 20s linear infinite;
-    animation: animationFrames 40s linear infinite;}
 
 header .row>div:nth-child(1)>a {
   display: block;
   height: 50px;
-  background: url(https://dandegimon.github.io/ddugether/images/logo.png) no-repeat;
+  background: url(https://dandegimon.github.io/ddugether/images/logo1.png) no-repeat;
   margin-top: 20px;
-  margin-bottom: -10px;
+  margin-bottom: -2px;
 }
 
-
-/* 전체 쉐도우 */
-
-header #header-bar>.row,
-#main .menu-wrapper,
-#main #main-content>div.frame {
-  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
-}
 
 /*기본 로고 숨김*/
 header .row>div:nth-child(1)>a>img {
@@ -47,32 +36,45 @@ header .row>div:nth-child(1)>a>img {
 /* 로고밑 NAV bar */
 
 header #header-bar>.row {
-	background:linear-gradient(to bottom,#fff8d9,#efcd3f);
+	background:linear-gradient(to bottom,#000,#000428);
 	border-radius: 20px;
 	border: none;
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
 }
-
+/* 광고판 글자색 */
+		header #header-bar a.dropdown-toggle,header #header-bar #header-top-notice a {
+	color: #fff;
+		}
+		
 /* 검색폼 보더 */
 
 header #right-search-form>input[type='text'] {
-  border: 2px solid #bc9f24;
+  border: none;
   border-radius: 20px;
+  box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px 1px;
 }
 header #right-search-form>#right-search-btn {
-  color: #bc9f24;
+  color: #fff;
 }
 
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
 
 #main .menu-wrapper>.header {
-	border: 3px solid transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 10px 10px 0px 0px;
-	background-image: linear-gradient(to left,#fff5ca,#efcd3f), linear-gradient(to left, #fff5ca,#efcd3f);
+	background-image: linear-gradient(to left,#000,#000428), linear-gradient(to left, #000,#000428);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
-
+#main .menu-wrapper>a {
+			background: transparent;
+			border: none;
+	color: #fff;
+		}
+		#main .menu-wrapper>a:hover {
+			background: rgba(255, 255, 255, 0.3);
+		}
 #main .menu-wrapper a:nth-last-child(1) {
 border-radius: 0px 0px 15px 15px;
 }
@@ -84,13 +86,13 @@ border-radius: 0px 0px 15px 15px;
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 #main .menu-wrapper>a>em {
-  color: #f6f0da;
+  color: rgba(255, 255, 255, 0);
 }
 .fa-square:before {
-  color: #f6f0da;
+  color: rgba(255, 255, 255, 0);
 }
 
 header #header-bar>.row,
@@ -102,74 +104,94 @@ header #header-bar>.row,
 #main #main-content>div.frame{
 	border: 3px solid transparent;
 	border-radius: 10px;
-	background-image: linear-gradient(white,white), linear-gradient(to bottom, #fff5ca,#efcd3f);
+	background: rgba(255, 255, 255, 0);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
-}
-/* 뚜박사 */
-#article-list{
-	background-image: url(https://dandegimon.github.io/ddugether/images/ddubaksa.png);
-	background-repeat: no-repeat;
-	background-position: 74% 88.1%;
 }
 
 #main .menu-wrapper {
 border-radius: 10px;
 }
 
-
-/*글안*/
-#article-content-wrapper>.header{
-	background: linear-gradient(to top,#fff5ca,#efcd3f);
-	border-top: 2px solid #fff;
+/*뚜띠프사동그라미*/
+#board-info #board-info-profile-img{
+    width: 6.5em;
+    height: auto;
+    background-color: transparent;
+    float: left !important;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    top: -12px;
+    left: -10px;
 }
-#article-content-wrapper #article-content,#article-content-wrapper>.vote-area{
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
+#board-info #board-info-profile-img:hover{
+	-webkit-animation: slide-left 1s both;
+	animation: slide-left 1s both;
 }
-#article-content-wrapper>.footer{
-	background: linear-gradient(to top,#fff5ca,#efcd3f);
-	border-bottom: 2px solid #fff;
+#board-info{
+height: 100px;
 }
-.btn-group-sm>.btn, .btn-sm{
-	border-radius: 7px 0px;
-	border-color: #fff;
+element.style {
 }
-#article-reply-area > .header h5,#lastc{
-	color: #efcd3f;
+header #header-bar #header-menu-left #favoriteDropdown {
+    padding-left: 0.3em;
+    padding-right: 0.5em;
 }
-.fr-toolbar{
-	color: #b9a139;
-	border-top: 5px solid #aaffe8;
-}
-#writeCommentBtn{
-	background-color: #b9a139;
-}
-#writeCommentBtn:hover{
-	background-color: #efcd3f;
-	border: none;
-}
-#article-neighbor-list{
-	color: #b9a139;
-}
-#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
-	background: linear-gradient(to bottom,#aaffe8,#70c7ff);
-	border-bottom: 2px solid #fff;
-}
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
-	color: #b9a139;
+#board-info h1{
+			border: none;
+		}
+#board-info h1>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    font-weight: bold;
 }
 
-/*하단*/
-footer, a{
-	color: #b9a139;
+.label-default{
+background:#fff;
+}
+#article-reply-area #reply-real-area .reply, #article-reply-area #reply-best-area .reply{
+border:none;
+}
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header {
+    background: #f7f7f7;
+    border: 2px solid #190907;
+    padding: 0.4em 0.5em;
+    border-radius: 10px;
 }
 
 /* 스트리머 게시판 상단 정보 글씨색상 */
 
 #board-info #board-info-bottom a {
-  color: #190907;
+  color: #fff;
 }
+		
+/* 사람수 옆 이미지 색상 */
+#board-info #viewers-area, #board-info #score-area {
+color: rgba(255, 255, 255, 0.6);
+font-weight: 700;
+}
+/* 사람 명수 앞에 그림*/
+#board-info #viewers-area .fa-user:before{
+	color: (255, 255, 255, 0.6);
+	content: url('https://static-cdn.jtvnw.net/badges/v1/aaa6ea27-08a7-43da-8567-39a2ddef014f/1');
+	position: relative;
+	top: 5px;
+}
+#board-info #viewers-area #viewers:before {
+content: "기웃기웃 "; /*오른쪽 상단 사이트 이용자 수 뒷부분*/
+cursor: text;
+}
+#board-info #viewers-area #viewers:after {
+    content: " 명의 모티들";
+    cursor: text;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time{
+border-bottom:none;
+}
+
 
 
 /* 게시글 관련부분 */
@@ -179,113 +201,36 @@ footer, a{
 }
 
 #article-list #article-list-category {
-	border: 2px solid transparent;
+	border: 1px solid rgba(255, 255, 255, 0.5);
 	border-radius: 10px;
-	background-image: linear-gradient(white,white), linear-gradient(to right, #fff5ca,#efcd3f);
+	background: rgba(255, 255, 255, 0);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	margin-bottom: 10px;
 }
+#article-list>.article-list-row:hover {
+			background: rgba(255, 255, 255, 0.3);
+		}
 
 /*카테고리 안 색상*/
 #article-list #article-list-category>a {
-  background: white;
+  background: rgba(255, 255, 255, 0);
 }
-
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover{
+	border-radius: 10px 0 0 10px;
+	background: rgba(255, 255, 255, 0);
+		}
+.fa-home{
+	color: rgba(255, 255, 255, 0.8);
+		}
+		
 /*게시글 테두리*/
 #article-list>.article-list-row {
-    border: 1px solid #f6f0da;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin: 4px 0;
 }
-
-/* 인기글 배경색상 */
-#article-list>.article-list-row.hot{
-background-color: rgba(255,249,145,0.7);
-}
-
-/*추천수*/
-#article-list>.article-list-row>.item>.list-header>span {
-    background-color: #190907;
-    color: #fff;
-    font-weight: bold;
-    padding: 1px 5px;
-    font-size: 11px;
-    border-radius: 50%;
-}
-
-/* 게시글 왼쪽 테두리 */
-#article-list>.article-list-row>.item>.list-header {
- border-left: none;
-}
-
-/*댓글수*/
-#article-list>.article-list-row>.item>.list-title>small.comment-count {
-  color: #b9a139;
-}
-
-/* 글 안속 댓글 닉네임 색 */
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
-color: #b9a139;
-}
-
-/*글쓴이색*/
-#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: #b9a139;
-}
-
-/*선택된 페이지 색상*/
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
-  background-color: #b9a139;
-  border-color: #b9a139;
-  border-radius: 3px;
-}
-
-/* 게시글 페이지 숫자 테두리*/
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-  color: #b9a139;
-}
-
-/*선택되지 않은 페이지 색상*/
-.pagination>li>a,
-.pagination>li>span {
-  color: #b9a139;
-}
-
-/*카테고리 옆 빈공간 색*/
-#article-content-wrapper>.header {
-  border-top: 2px solid #ffffff;
-}
-
-#article-info>h2 {
-  font-weight: bold;
-}
-
-#article-info>h2>span.category {
-  color: #e71c23 !important;
-}
-
-#article-reply-area>.header h5 {
-  color: #e71c23;
-}
-
-#main .menu-wrapper>a {
-  padding: 0.5em 1.4em 0.5em 0.7em !important;
-}
-
-/* 집모양 */
-a {
-  color: #190907;
-}
-
+		
 /* 공지사항 동그라미 */
 span.a-badge i.fa.fa-info-circle {
   color: #e71c23;
@@ -293,7 +238,7 @@ span.a-badge i.fa.fa-info-circle {
 
 /*공지사항 배경색*/
 #article-list>.article-list-row.notice{
-    background-color: rgba(255,249,145,0.7);
+    background-color: rgba(255,255,255,0.3);
     border-radius: 15px;
     border: 2px solid;
     margin-bottom: 5px;
@@ -315,88 +260,171 @@ span.a-badge i.fa.fa-star {
     position: relative;
     font-family: 'Nanum Gothic', sans-serif;
 }
-
-/* footer */
-
-#article-list>.article-list-row {
-  border-right: none;
+		
+/* 인기글 배경색상 */
+#article-list>.article-list-row.hot{
+background-color: rgba(255,255,255,0.3);
 }
 
-#article-list #article-list-menu {
-  box-sizing: border-box;
-  width: unset;
-  margin: 20px;
+/*추천수*/
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    font-weight: bold;
+    padding: 1px 5px;
+    font-size: 11px;
+    border-radius: 50%;
+}
+/* 게시글 색상 */
+#article-list>.article-list-row>.item>.list-title>a{
+			color: white; 
+		}
+#article-list>.article-list-row>.item>.list-title>a:visited{
+			color: #ddd;
+		}
+/* 게시글 왼쪽 테두리 */
+#article-list>.article-list-row>.item>.list-header {
+ border-left: none;
+}
+/*댓글수*/
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #fff4cc;
+}
+/*글쓴이색*/
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+  color: #fff4cc;
+}
+/*카테고리 옆 빈공간 색*/
+#article-content-wrapper>.header {
+  border-top: 2px solid #ffffff;
+}
+#article-info>h2 {
+  font-weight: bold;
 }
 
-#article-list #boardSearchForm {
-  padding-bottom: 20px;
-  height: unset;
+#article-info>h2>span.category {
+  color: #e71c23 !important;
 }
 
+#article-reply-area>.header h5 {
+  color: #e71c23;
+}
+
+#main .menu-wrapper>a {
+  padding: 0.5em 1.4em 0.5em 0.7em !important;
+}
+	
+		
+/*선택된 페이지 색상*/
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  background-color: rgba(255,255,255,0.2);
+  border-color: #fff;
+  border-radius: 3px;
+}
+
+/* 게시글 페이지 숫자 테두리*/
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+}
+
+/*선택되지 않은 페이지 색상*/
+.pagination>li>a,
+.pagination>li>span {
+  color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0);
+}
 /*글쓰기 색상*/
 .btn-primary {
-  background: #190907 !important;
- border-color: #190907;
+  background: rgba(255,255,255,0) !important;
+ border-color: #fff;
 }
 .fr-toolbar{
-border-color:#190907; 
+border-color:#fff; 
 }
-
-/*글쓰기 라디오스*/
-#article-list #article-list-menu>.btn.write{
+/*하단 둥글게*/
+#article-list #article-list-menu>.btn.write,#article-list #article-list-menu>.btn.best,#article-list #article-list-menu>.btn.cog,#article-list #article-list-menu>.btn.del{
 border-radius: 10px;
 }
-
-/*하단 인기글설정삭제 라이오스*/
-#article-list #article-list-menu>.btn.best{
-border-radius: 10px;
-}
-#article-list #article-list-menu>.btn.cog{
-border-radius: 10px;
-}
-#article-list #article-list-menu>.btn.del{
-border-radius: 10px;
-}
-
 #article-list #article-option-area{
 display:none;
 }
+
+
+		
+/*글안*/
+#article-content-wrapper>.header{
+	background: linear-gradient(to top,#000,#000428);
+	border: none;
+	color: #fff;
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
+}
+#article-content-wrapper #article-content,#article-content-wrapper>.vote-area{
+	border: none;
+}
+#article-content-wrapper>.footer{
+	background: linear-gradient(to top,#000,#000428);
+	border: none;
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
+}
+.btn-group-sm>.btn, .btn-sm{
+	border-radius: 7px 0px;
+	border-color: 1px #fff;
+}
+#article-info{
+	color: #fff;
+}
+#article-reply-area > .header h5,#lastc{
+	color: rgba(255,255,255,0.5);
+}
+#article-content-wrapper #article-content, #article-content-wrapper>.vote-area{
+	background: rgba(255,255,255,0.9);
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
+}
+.fr-toolbar{
+	color: #fff;
+	border-top: 5px solid #002e57;
+}
+#writeCommentBtn{
+	background: rgba(255,255,255,0.2);
+}
+#writeCommentBtn:hover{
+	background: rgba(255,255,255,0.8);
+	border: 1px solid #cfb60c;
+}
+#article-neighbor-list,#article-neighbor-list>div>a{
+	color: rgba(255,255,255,0.5);
+}
+#article-neighbor-list>div:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
+	background: linear-gradient(to bottom,#aaffe8,#70c7ff);
+	border-bottom: 2px solid #fff;
+}
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
+	color: #b9a139;
+}
+#article-list>.article-list-row.active{
+	background-color: rgba(255,255,255,0.5);
+}
+		
+
+
 
 /*광고양옆 짝대기*/
 header #header-bar #header-menu-left, header #header-bar #header-menu-right{border: 0px;}
 /*광고뱃지*/
 header #header-bar #header-top-notice strong.notice-badge{display:none;}
 
-/* 사람수 옆 이미지 색상 */
-#board-info #viewers-area {
-color: #190907;
-font-weight: 700;
-}
-
-/* 사람 명수 앞에 그림*/
-#board-info #viewers-area .fa-user:before{
-	color: rgba(10,59,84,0);
-	content: url('https://dandegimon.github.io/ddugether/images/icon.png');
-	position: relative;
-	top: 5px;
-}
-
-#board-info #viewers-area #viewers:before {
-content: "재현씨... "; /*오른쪽 상단 사이트 이용자 수 뒷부분*/
-cursor: text;
-}
-
-#board-info #viewers-area #viewers:after {
-    content: "명이 기다리네...?";
-    cursor: text;
-}
-
-#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover{border-radius: 10px 0 0 10px;}
-
-
-#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time{
-border-bottom:none;
-}
 
 /*따띠좋아요표시*/
 .fa-heart:before {
@@ -411,52 +439,6 @@ header #header-bar #header-menu-left #playgroundDropdown {
     padding-right: 0.7em;
 }
 
-/*뚜띠프사동그라미*/
-#board-info #board-info-profile-img{
-    width: 6.5em;
-    height: auto;
-    background-color: white;
-    float: left !important;
-    border-radius: 50%;
-    border: none;
-    position: relative;
-    top: -12px;
-    left: -10px;
-}
-#board-info #board-info-profile-img:hover{
-	-webkit-animation: slide-left 1s both;
-	animation: slide-left 1s both;
-}
-
-#board-info{
-height: 100px;
-}
-element.style {
-}
-header #header-bar #header-menu-left #favoriteDropdown {
-    padding-left: 0.3em;
-    padding-right: 0.5em;
-}
-
-#board-info h1>a{
-    text-decoration: none;
-    color: #190907;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.label-default{
-background:#f6f0da;
-}
-#article-reply-area #reply-real-area .reply, #article-reply-area #reply-best-area .reply{
-border:none;
-}
-#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header {
-    background: #f7f7f7;
-    border: 2px solid #190907;
-    padding: 0.4em 0.5em;
-    border-radius: 10px;
-}
 
 /*마우스 포인터*/
 *{
@@ -474,7 +456,7 @@ cursor: url(https://dandegimon.github.io/ddugether/images/mouse.png) 0 0, auto !
 #movetotop {
     display: inline-block;
     opacity:1;
-    background: url("https://dandegimon.github.io/ddugether/images/up.png");
+    background: url("https://dandegimon.github.io/ddugether/images/mdup.png");
     width: 80px;  
     height: 80px;
     background-size: contain;
@@ -483,22 +465,23 @@ cursor: url(https://dandegimon.github.io/ddugether/images/mouse.png) 0 0, auto !
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-/* 상단 로고 */
-header:before {
-    display: block;
-    width: 100%;
-    height: 78px;
-    background: url('https://dandegimon.github.io/ddugether/images/top.jpg') no-repeat #fff;
-    background-position: center center;
-    position: relative;
-    top: 0;
-    padding: 0;
-    content: " ";
-    margin-bottom: 15px;
+/* footer */
+footer, a{
+	color: #000;
+}
+#article-list>.article-list-row {
+  border-right: none;
 }
 
-header {
-    padding: 0 0 0.4em 0;
+#article-list #article-list-menu {
+  box-sizing: border-box;
+  width: unset;
+  margin: 20px;
+}
+
+#article-list #boardSearchForm {
+  padding-bottom: 20px;
+  height: unset;
 }
 
 /*애니메이션*/
@@ -522,25 +505,9 @@ header {
             transform: translateX(-100px);
   }
 }
-/* 배경 */
-@keyframes animationFrames{
-0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
- 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-}
-  
-@-moz-keyframes animationFrames {
-0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
- 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-}
-  
-@-webkit-keyframes animationFrames {
-0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
-50% {}
- 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-}
-  
-@-ms-keyframes animationFrames {
-0% {background-position: 500px 1000px, 400px 800px, 300px 300px;}
- 100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-}
 
+@keyframes star{
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+50% {background-position: 500px 500px, 500px 500px, 500px 500px;}
+100% {background-position: 1000px 1000px, 1000px 1000px, 1000px 1000px;}
+}

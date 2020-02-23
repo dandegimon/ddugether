@@ -13,14 +13,14 @@ body {
 
 /* 모바일 배경 */
 #article-list{
-background: #f3eed7;
+background: #000428;
 }
 /* 하단 배경*/
 .pagination-area{
-background: #f3eed7;
+background: #000428;
 }
 #article-list-menu{
-background: #f3eed7;
+background: #000428;
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
@@ -29,51 +29,38 @@ background: #f3eed7;
 
 /* 카테고리 */
 #article-list #article-list-category {
-  border: 2px solid #190907;
-  background: white;
+  border: none;
+  background: transparent;
   border-radius: 15px;
 }
 
 /*카테고리 내용 색*/
 #article-list #article-list-category>a {
-  background: white;
+  background: transparent;
 }
-
+#article-list #article-list-category > a.active{
+	background: rgba(255,255,255,0);
+}
+#article-list #article-list-category>a:hover{
+	background: rgba(255,255,255,0.3);
+}	
+.fa-home:before {
+  color: #fff;
+}
 /* 추천수 색깔 */
 #article-list>.article-list-row>.item>.list-header>span {
-  background-color: #190907;
+  background-color: transparent;
 }
 
 /*댓글수*/
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
-  color: #190907;
+  color: #fff4cc;
   letter-spacing: -0.05em !important;
 }
 
 /* 글쓴이 */
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: #190907;
-}
-
-/* 글 안에 */
-#article-reply-area #reply-real-area .reply, #article-reply-area #reply-best-area .reply{
-border:none
-}
-#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header {
-    background: #f6f0da;
-    border: 2px solid #190907;
-    padding: 0.4em 0.5em;
-    border-radius: 10px;
-}
-/*글 안 댓글쓰기*/
-.fr-toolbar{
-border-color: #190907;
-background: #f6f0da;
-color: #190907;
-}
-/* 윗글 아래글 색상*/
-#article-neighbor-list{
-color: #190907;
+  color: #fff4cc;
 }
 
 /*선택된 페이지 색상*/
@@ -83,32 +70,32 @@ color: #190907;
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-  background-color: #b9a139;
-  border-color: #b9a139;
+  background-color: rgba(255,255,255,0.2);
+  border-color: #fff;
   border-radius: 3px;
 }
-
 /* 게시글 페이지 숫자 테두리*/
 .pagination>li>a:focus,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-  color: #b9a139;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
 }
-
 /*선택되지 않은 페이지 색상*/
 .pagination>li>a,
 .pagination>li>span {
-  color: #b9a139;
+  color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0);
 }
 
 #article-content-wrapper>.header {
-  border-top: 2px solid #190907;
+  border-top: 1px solid #fff;
 }
 
 #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
 #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-  color: #190907;
+  color: #fff;
 }
 
 #article-info>h2 {
@@ -116,16 +103,16 @@ color: #190907;
 }
 
 #article-info>h2>span.category {
-  color: #f6f0da !important;
+  color: #000428 !important;
 }
 
 #article-reply-area>.header h5 {
-  color: #f6f0da;
+  color: #000428;
 }
 
 /* 글쓰기 버튼 색상 */
 .btn-primary {
-  background: #190907 !important;
+  background: transparent;
 }
 
 /* 모바일 */
@@ -135,12 +122,12 @@ color: #190907;
 }
 
 header {
-  background-color: #f3eed7;
-  border-bottom-color: #f3eed7;
+  background-color: #000428;
+  border-bottom-color: #000428;
 }
 
 header>#header-area>a>h1 {
-  background: url('https://dandegimon.github.io/ddugether/images/logo.png') no-repeat;
+  background: url('https://dandegimon.github.io/ddugether/images/logo1.png') no-repeat;
   background-size: auto 34px;
   background-repeat: no-repeat;
   height: unset !important;
@@ -152,41 +139,38 @@ header>#header-area>a>h1{
 
 
 header>#header-area>#header-search-link {
-  color: #190907;
+  color: #fff;
 }
 
 header>#header-area>#header-bar-link {
-  color: #190907;
+  color: #fff;
 }
 
 header>#header-search-bar #header-search-btn {
-  color: #190907;
+  color: #fff;
 }
 
 
 header>#header-search-bar #header-search-input {
-  border-color: #190907;
+  border-color: #fff;
 }
 
 /* 글쓴이 색 */
 #article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
-  color: #190907;
+  color: #fff4cc;
 }
 
 
 #nav#nav>.nav-header {
-  background-color: #efcd3f;
+  background-color: #000428;
   color: white;
 }
 
-.fa-home:before {
-  color: #190907;
-}
 
 /* 프로필 */
 #board-info{
-border-bottom: 2px solid #190907;
-background: #f3eed7;
+border-bottom: 2px solid #000428;
+background: #000428;
 }
 #board-info>h1>#board-info-profile-img{
 width: 60px;
@@ -194,14 +178,14 @@ height: 60px;
 border-radius: 50%;
 }
 #board-info>h1>a{
-color: #190907;
+color: #fff;
 font-size: 17px;
 }
 
 
 /* 우측 즐겨찾기 */
 html body #board-info a.board-right-menu{
-background: none;
+background: rgba(255,255,255,0.3);
 width: 33px;
 height: 33px;
 text-align: center;
@@ -210,18 +194,23 @@ margin-top: 30px;
 margin-right: 4px;
 margin-bottom: 4px;
 border: none;
-color: #190907;
+color: #fff;
 }
 
 /* 카테고리 */
 #article-list #article-list-category{
-border-radius: 20px;
 margin-bottom: 10px;
 }
-
+.fa-home{
+background: transparent;
+	color: #fff
+		}
 /* 접속자수 */
 .fa-user:before{
 content: url(https://dandegimon.github.io/ddugether/images/icon.png);
+}
+#board-info #viewers-area, #board-info #score-area{
+	color: rgba(255,255,255,0.7);
 }
 
 /* 공지사항 숨기기 */
@@ -232,9 +221,8 @@ margin-top: 10px;
 
 /* 공지사항 */
 #article-list>.article-list-row.notice{
-    background-color: rgba(255,249,145,0.7);
-    border-radius: 15px;
-    border: 2px solid;
+    background-color: rgba(255,255,255,0.7);
+    border: none;
     margin-bottom: 5px;
     border-color:rgba(0,0,0,0);
 }
@@ -246,14 +234,13 @@ content: url(https://dandegimon.github.io/silgerher/images/notice.gif);
 
 /* 인기글 설정 */
 #article-list>.article-list-row.hot{
-border: #f6f0da;
-border-radius: 20px;
+border: none;
 margin-bottom: 5px;
 }
 
 /* 인기글 배경색상 */
 #article-list>.article-list-row.hot{
-background-color: rgba(255,249,145,0.7);
+background-color: rgba(255,255,255,0.7);
 }
 
 /* 인기글 아이콘 */
@@ -267,31 +254,29 @@ span.a-badge i.fa.fa-star{
 }
 
 /* 게시글 설정 */
+
 #article-list>.article-list-row{
+background: rgba(255,255,255,0.5);
 border-radius: 20px;
 margin-bottom: 5px;
 }
-
-
+#article-list>.article-list-row:hover{
+background: rgba(255,255,255,0.7);
+}
 /* 하단 아이콘들 */
-#article-list-menu>.btn.write{
-border-radius: 10px;
-}
-#article-list-menu>.btn.cog{
-border-radius: 10px;
-}
-#article-list-menu>.btn.best{
+#article-list-menu>.btn.write,#article-list-menu>.btn.cog,#article-list-menu>.btn.best{
 border-radius: 10px;
 }
 
 /* footer */
 footer{
-color: #190907;
-background: #f3eed7;
+color: #fff;
+background: #000428;
 }
 a{
-color: #190907;
+color: #fff;
 }
+
 /* 위로 */
 #movetotop img {
     display:none
@@ -299,45 +284,58 @@ color: #190907;
 #movetotop {
     display: inline-block;
     opacity:1;
-    background: url("https://dandegimon.github.io/ddugether/images/up.png");
+    background: url("https://dandegimon.github.io/ddugether/images/mdup.png");
     width: 80px;  
     height: 80px;
     background-size: contain;
 }
 
+		
 /*글안*/
 #article-content-wrapper>.header{
-	background: linear-gradient(to top,#fff5ca,#efcd3f);
-	border-top: 2px solid #fff;
+	background: linear-gradient(to top,#000,#000428);
+	border: none;
+	color: #fff;
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
 }
 #article-content-wrapper #article-content,#article-content-wrapper>.vote-area{
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
+	border: none;
 }
 #article-content-wrapper>.footer{
-	background: linear-gradient(to top,#fff5ca,#efcd3f);
-	border-bottom: 2px solid #fff;
+	background: linear-gradient(to top,#000,#000428);
+	border: none;
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
 }
 .btn-group-sm>.btn, .btn-sm{
 	border-radius: 7px 0px;
-	border-color: #fff;
+	border-color: 1px #fff;
+}
+#article-info{
+	color: #fff;
 }
 #article-reply-area > .header h5,#lastc{
-	color: #efcd3f;
+	color: rgba(255,255,255,0.5);
+}
+#article-content-wrapper #article-content, #article-content-wrapper>.vote-area{
+	background: rgba(255,255,255,0.9);
+	box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px 1px;
 }
 .fr-toolbar{
-	color: #b9a139;
-	border-top: 5px solid #aaffe8;
+	color: #fff;
+	border-top: 5px solid #002e57;
 }
 #writeCommentBtn{
-	background-color: #b9a139;
+	background: rgba(255,255,255,0.2);
 }
 #writeCommentBtn:hover{
-	background-color: #efcd3f;
-	border: none;
+	background: rgba(255,255,255,0.8);
+	border: 1px solid #cfb60c;
 }
-#article-neighbor-list{
-	color: #b9a139;
+#article-neighbor-list,#article-neighbor-list>div>a{
+	color: rgba(255,255,255,0.5);
+}
+#article-neighbor-list>div:hover{
+	background-color: rgba(255,255,255,0.1);
 }
 #article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
 	background: linear-gradient(to bottom,#aaffe8,#70c7ff);
@@ -345,4 +343,7 @@ color: #190907;
 }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
 	color: #b9a139;
+}
+#article-list>.article-list-row.active{
+	background-color: rgba(255,255,255,0.5);
 }

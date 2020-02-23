@@ -407,11 +407,14 @@ display:none;
 	background-color: rgba(255,255,255,0.1);
 }
 #article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
-	background: linear-gradient(to bottom,#aaffe8,#70c7ff);
-	border-bottom: 2px solid #fff;
+	background: linear-gradient(to top,#000,#000428);
+	border: none;
 }
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
-	color: #b9a139;
+#article-reply-area #reply-real-area .reply > .reply-content, #article-reply-area #reply-best-area .reply>.reply-content{
+	background: rgba(255,255,255,0.6);
+}
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged, .comment-vote-btn, .re-reply-btn, .middot, .time, .comment-report-btn{
+	color: #fff;
 }
 #article-list>.article-list-row.active{
 	background-color: rgba(255,255,255,0.5);

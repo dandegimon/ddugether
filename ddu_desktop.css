@@ -264,7 +264,9 @@ span.a-badge i.fa.fa-star {
 #article-list>.article-list-row.hot{
 background-color: rgba(255,255,255,0.3);
 }
-
+#article-list>.article-list-row>.item>.list-header.v0>span{
+background-color: rgba(255,255,255,0);
+}
 /*추천수*/
 #article-list>.article-list-row>.item>.list-header>span {
     background-color: rgba(255,255,255,0);

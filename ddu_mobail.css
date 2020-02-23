@@ -113,6 +113,7 @@ background: #000428;
 /* 글쓰기 버튼 색상 */
 .btn-primary {
   background: transparent;
+  color: #000428;
 }
 
 /* 모바일 */
@@ -326,6 +327,7 @@ color: #fff;
 }
 #writeCommentBtn{
 	background: rgba(255,255,255,0.2);
+	color: #000428;
 }
 #writeCommentBtn:hover{
 	background: rgba(255,255,255,0.8);

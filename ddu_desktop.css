@@ -2,7 +2,9 @@
 @font-face { font-family: 'Binggrae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 html, body, table, div, p {
-font-family: 'Binggrae'; }
+font-family: 'Binggrae';
+text-shadow: 0 0 1px #fff, 0 0 10px #fff;
+}
 
 html, body{
  background-image: linear-gradient(#000000,#000428, #002e57);

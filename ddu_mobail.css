@@ -331,10 +331,11 @@ color: #fff;
 #writeCommentBtn{
 	background: rgba(255,255,255,0.2);
 	color: #000428;
+	border: 1px solid #000428;
 }
 #writeCommentBtn:hover{
 	background: rgba(255,255,255,0.8);
-	border: 1px solid #cfb60c;
+	border: 1px solid #000;
 }
 #article-neighbor-list,#article-neighbor-list>div>a{
 	color: rgba(255,255,255,0.5);
@@ -343,11 +344,11 @@ color: #fff;
 	background-color: rgba(255,255,255,0.1);
 }
 #article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
-	background: linear-gradient(to bottom,#aaffe8,#70c7ff);
-	border-bottom: 2px solid #fff;
+	background: linear-gradient(to #000,#000428);
+	border: none;
 }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
-	color: #b9a139;
+	color: #fff;
 }
 #article-list>.article-list-row.active{
 	background-color: rgba(255,255,255,0.5);

@@ -277,9 +277,6 @@ footer{
 color: #fff;
 background: #000428;
 }
-a{
-color: #fff;
-}
 
 /* 위로 */
 #movetotop img {
@@ -296,6 +293,7 @@ color: #fff;
 
 		
 /*글안*/
+
 #article-content-wrapper>.header{
 	background: linear-gradient(to top,#000,#000428);
 	border: none;
